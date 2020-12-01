@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework ss5</title>
+</head>
+
+<body>
+    <script>
+        // demo 1 arrow function
+        arrowFunc = () => {
+            alert("hello Arrow Function");
+        }
+        arrowFunc();
+        //tạo biến a = 100 +200
+        let a = 100 + 200;
+        console.log("a = " + a);
+        // tạo 1 mảng gồm 10 phần tử
+        let arrayColor = ['xanh', 'đỏ', 'tím', 'vàng', 'nâu', 'đen', 'trắng', 'tím', 'hồng', 'cam'];
+        // hiện thị mảng
+        console.log(arrayColor);
+        // hiện độ dài mảng
+        console.log("độ dài của mảng trên là: " + arrayColor.length);
+        // hiển thị phần tử vị trí thứ 7
+        console.log("phần tử ở vị trí thứ 7 là: " + arrayColor[6]);
+        // xóa phần tử thứ 5
+        console.log("mảng sau khi đã xóa phần tử thứ 5: ");
+        arrayColor.splice(5, 1);
+        console.log(arrayColor);
+
+        //tạo 1 mảng mới có giá trị gấp 3 lần mảng cũ
+        let arrayX = [1, 5, 3];
+        console.log("mảng ban đầu: " + arrayX);
+        let arrayY = arrayX.map(x => x * 3);
+        console.log("mảng mới gấp 3 lần mảng cũ: " + arrayY);
+    </script>
+</body>
+
+</html>
