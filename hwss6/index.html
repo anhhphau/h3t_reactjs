@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework ss6</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="">Người dùng nhập vào 1 số nguyên bất kì:</label>
+        <input type="text" id="textId">
+        <button type="button" onclick="btClick()">Gửi</button>
+    </form>
+    <script>
+        function btClick() {
+            let textId = document.getElementById("textId").value;
+            switch(textId) {
+                case '1': window.open('https://quantrimang.com/', 'qtm', 'width=600px, height=800px'); break;
+                case '2': window.open('https://download.com.vn/', 'dl', 'width=600px, height=800px'); break;
+                case '3': window.open('https://vndoc.com/', 'vnd', 'width=600px, height=800px'); break;
+                default: window.open('https://meta.vn/', 'mt', 'width=600px, height=800px'); break;
+            }
+        }
+    </script>
+</body>
+
+</html>
