@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b2</title>
+</head>
+
+<body>
+    <h1 id="textId1">Hello</h1>
+    <button type="button" onclick="btClick()">Đổi thành hello2</button>
+    <br><button type="button" onclick="btClickCss()">Đổi màu chữ</button>
+    <br><button type="button" onclick="btClickHtml()">Thay thẻ h1 thành h2</button>
+    <script>
+        function btClick() {
+            document.getElementById("textId1").innerHTML = "Hello2";
+        }
+        function btClickCss() {
+            document.getElementById("textId1").style.color = "red";
+        }
+        function btClickHtml() {
+            document.getElementById("textId1").outerHTML = "<h2>Hello</h2>";
+        }
+    </script>
+</body>
+
+</html>
